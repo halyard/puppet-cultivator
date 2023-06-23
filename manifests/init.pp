@@ -51,6 +51,8 @@ class cultivator (
 
   file { [$dir, $check_dir]:
     ensure => directory,
+    owner  => 'root',
+    group  => 'cultivator',
     mode   => '0750',
   }
 
@@ -64,7 +66,7 @@ class cultivator (
   file { "${dir}/config.yaml":
     ensure  => file,
     mode    => '0640',
-    owner   => 'cultivator',
+    owner   => 'root',
     group   => 'cultivator',
     content => template('cultivator/config.yaml.erb'),
   }

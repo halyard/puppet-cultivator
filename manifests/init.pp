@@ -61,12 +61,12 @@ class cultivator (
     mode   => '0750',
   }
 
-  file { "${dir}/config.yml":
+  file { "${dir}/config.yaml":
     ensure  => file,
     mode    => '0640',
     owner   => 'cultivator',
     group   => 'cultivator',
-    content => template('cultivator/config.yml.erb'),
+    content => template('cultivator/config.yaml.erb'),
   }
 
   vcsrepo { $check_dir:

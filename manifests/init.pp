@@ -4,7 +4,6 @@
 # @param integration_id sets the GitHub app ID
 # @param version sets the release tag to use
 # @param dir sets the root storage directory
-# @param private_key_file sets the path for the app PEM file
 # @param check_repo sets the path for the check repo
 # @param bootdelay sets how long to wait before first run
 # @param frequency sets how often to run updates

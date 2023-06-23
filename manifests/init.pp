@@ -9,7 +9,7 @@
 # @param frequency sets how often to run updates
 class cultivator (
   String $integration_id,
-  String $version = 'v0.0.1',
+  String $version = 'v0.0.4',
   String $dir = '/var/lib/cultivator',
   String $check_repo = 'https://github.com/akerl/repo-checks',
   String $bootdelay = '300',
@@ -69,6 +69,14 @@ class cultivator (
     owner   => 'root',
     group   => 'cultivator',
     content => template('cultivator/config.yaml.erb'),
+  }
+
+  file { "${dir}/.gitconfig":
+    ensure  => file,
+    mode    => '0640',
+    owner   => 'root',
+    group   => 'cultivator',
+    content => template('cultivator/gitconfig.erb'),
   }
 
   vcsrepo { $check_dir:

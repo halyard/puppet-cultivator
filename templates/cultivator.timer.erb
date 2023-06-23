@@ -1,0 +1,9 @@
+[Unit]
+Description=Schedule cultivator runs
+
+[Timer]
+OnBootSec=<%= @bootdelay %>
+OnUnitActiveSec=<%= @frequency %>
+
+[Install]
+WantedBy=multi-user.target

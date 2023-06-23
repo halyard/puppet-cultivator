@@ -1,0 +1,7 @@
+[Unit]
+Description=Run cultivator
+
+[Service]
+Type=simple
+User=cultivator
+ExecStart=/usr/local/bin/cultivator execute -c /var/lib/cultivator/config.yaml

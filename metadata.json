@@ -1,0 +1,16 @@
+{
+  "name": "halyard-cultivator",
+  "version": "0.0.1",
+  "author": "Les Aker",
+  "license": "MIT",
+  "summary": "Configure cultivator",
+  "source": "https://github.com/halyard/puppet-cultivator",
+  "project_page": "https://github.com/halyard/puppet-cultivator",
+  "issues_url": "https://github.com/halyard/puppet-cultivator/issues",
+  "dependencies": [
+
+  ],
+  "operatingsystem_support": [
+
+  ]
+}

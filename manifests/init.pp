@@ -88,6 +88,6 @@ class cultivator (
   ~> service { 'cultivator.timer':
     ensure  => running,
     enable  => true,
-    require => File['/var/lib/cultivator/config.yml'],
+    require => File['/var/lib/cultivator/config.yaml'],
   }
 }

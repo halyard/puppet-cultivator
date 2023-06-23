@@ -49,7 +49,12 @@ class cultivator (
     unless  => "/usr/bin/test -f ${binfile} && ${binfile} version | grep '${version}'",
   }
 
-  file { [$dir, $cache_dir, $check_dir]:
+  file { [$dir, $check_dir]:
+    ensure => directory,
+    mode   => '0750',
+  }
+
+  file { $cache_dir:
     ensure => directory,
     owner  => 'cultivator',
     group  => 'cultivator',

@@ -13,7 +13,7 @@ class cultivator (
   String $dir = '/var/lib/cultivator',
   String $check_repo = 'https://github.com/akerl/repo-checks',
   String $bootdelay = '300',
-  String $frequency = '300'
+  String $frequency = '3600'
 ) {
   $cache_dir = "${dir}/cache"
   $check_dir = "${dir}/checks"

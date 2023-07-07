@@ -9,7 +9,7 @@
 # @param frequency sets how often to run updates
 class cultivator (
   String $integration_id,
-  String $version = 'v0.0.14',
+  String $version = 'v0.0.16',
   String $dir = '/var/lib/cultivator',
   String $check_repo = 'https://github.com/akerl/repo-checks',
   String $bootdelay = '300',
